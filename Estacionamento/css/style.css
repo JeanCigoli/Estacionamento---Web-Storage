@@ -1,0 +1,337 @@
+*{
+    margin: 0;;
+    padding: 0px;
+}
+
+body{
+    background-color: #000000;
+}
+
+/* CLASSES GERAIS */
+
+.conteudo{
+    width: 1300px;
+    height: inherit;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto{
+    color: #000000;
+    font-family: candara, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.titulo{
+    font-family: candara, sans-serif;
+    font-size: 50px;
+    color: #000000;
+    font-weight: bolder;
+    font-style: oblique;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-family: candara, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-style: oblique;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    min-height: 370px;
+    height: auto;
+}
+
+.input_texto{
+    width: 200px;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid 3px #203c68;
+    text-align: center;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.input_texto:focus{
+    width: 250px;
+    border: solid 3px #d8d229;
+    outline: 0;
+}
+
+.espacamento{
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.botao{
+    width: 200px;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid 3px #203c68;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    outline: 0;
+}
+
+.botao:hover{
+    border: solid 3px #d8d229;
+    background-color: #203c68;
+    color: #ffffff;
+}
+
+.botao_acao{
+    width: 70px;
+    border-radius: 25px;
+    padding: 2px;
+    border: solid 3px #203c68;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    outline: 0;
+}
+
+.botao_acao:hover{
+    border: solid 3px #d8d229;
+    background-color: #203c68;
+    color: #ffffff;
+}
+
+.conteiner_modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000cc;
+    top:0px;
+    left: 0px;
+    position: fixed;
+    z-index: -5;
+    opacity:0;
+    transition: all 0.5s;
+}
+ 
+.abrirModal{
+    opacity:1;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+/* CABECALHO DA INDEX */
+
+#cabecalho{
+    width: 100%;
+    height: 150px;
+}
+
+#nome_sistema{
+    width: 70%;
+    height: inherit;
+    float: left;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+#logo_sistema{
+    width: 30%;
+    height: inherit;
+    float: left;
+}
+
+#logo_sistema img{
+    width: 200px;
+    height: inherit;
+}
+
+/* CONTEINER DE CADASTRO */
+
+
+#conteiner_cadastro{
+    width: 100%;
+    min-height: 370px;
+    height: auto;
+}
+
+#cadastro{
+    width: 60%;
+    height: inherit;
+    float: left;
+    text-align: center;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+
+#indice{
+    width: 40%;
+    height: 370px;
+    float: left;
+    text-align: center;
+}
+
+#conteiner_botao{
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    margin-top: 18px;
+    margin-left: 18px;
+    border: solid 3px #203c68;
+}
+
+/* TABELA DE CADASTRO */
+
+.conteiner_tabela{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+}
+
+.tabela{
+    padding: 20px;
+    width: inherit;
+    box-sizing: border-box;
+}
+
+th{
+    width: 150px;
+    height: 30px;
+    background-color: #203c68;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+td{
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.registros > tr {
+    background-color: #71a1ed;
+ }
+ 
+ .registros > tr:hover {
+    background-color: #5691ef;
+}
+
+/* MODAL PREÇO */
+
+.footer_modal{
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc_modal{
+    background-color: #ffffff;
+    border-radius: 30px; 
+    margin-top: 150px;
+}
+
+#conteiner_preco{
+    width: 700px;
+    height: 400px;
+}
+
+.caixa_preco{
+    width: 100%;
+    height: 20%;
+    border-radius: 30px 30px 0px 0px ;
+    background-color: #203c68;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.conteudo_preco{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+
+.footer_preco{
+    width: 100%;
+    height: 20%;
+}
+
+/* TELA DE COMPROVANTE DE ENTRADA */
+
+.conteiner_comp{
+    width: 700px;
+    height: 460px;
+}
+
+#comprovante_caixa{
+    width: 100vw;
+    height: 500px;
+}
+
+.caixa_comp{
+    width: 100%;
+    height: 50px;
+    border-radius: 30px 30px 0px 0px ;
+    background-color: #203c68;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.conteudo_comp{
+    padding-top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 310px;
+    text-align: center;
+}
+
+.footer_comp{
+    width: 100%;
+    height: 80px;
+}
+
+/* CONTEUDO DO MODAL RELATORIO */
+
+.conteudo_relatorio{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.conteiner_relatorio{
+    width: 1000px;
+    min-height: 200px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

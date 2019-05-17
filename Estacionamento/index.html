@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>
+            Parking Center
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="img/fastparking.PNG">
+    </head>
+    <body>
+        <!--    CABECALHO      -->
+        <div id="cabecalho">
+            <div class="conteudo center">
+                <div id="nome_sistema">
+                    <h1 class="titulo">FastParking</h1>
+                </div>
+                <div id="logo_sistema">
+                    <img src="img/fastparking.PNG" alt="logo Parking Center" title="logo Parking Center">
+                </div>
+            </div>
+        </div>
+        
+        <!--  CONTEUDO DE CADASTRO  -->
+        
+        <div class="container">
+            <div class="conteudo center">
+                <div id="conteiner_cadastro">
+                    <div id="cadastro">
+                        <div class="espacamento">
+                            <div>
+                                <label class="texto">Nome:</label>
+                            </div>
+                            <input type="text" class="input_texto texto validador" id="nome" placeholder="Nome">
+                        </div>  
+                        <div class="espacamento">
+                            <div>
+                                <label class="texto">Placa:</label>
+                            </div>
+                            <input type="text" class="input_texto texto validador" id="placa" placeholder="AAA-1111">
+                        </div> 
+                        <div class="espacamento">
+                            <button class="botao texto" id="adicionar">Adicionar</button>
+                        </div>     
+                    </div>
+                    <div id="indice">
+                        <div id="conteiner_botao">
+                            <div>
+                                <label class="texto">Altere os preços aqui:</label>
+                            </div>
+                            <div  class="espacamento">
+                                <button class="botao texto" id="preco">Preços</button>
+                            </div>
+                            <div>
+                                <label class="texto">Gerar relatório:</label>
+                            </div>
+                            <div  class="espacamento">
+                                <button class="botao texto" id="relatorio">Relatório</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- MODAL QUE APRESENTARÁ OS PREÇOS -->
+        <div class="conteiner_modal" id="preco_modal">
+            <div id="conteiner_preco" class="center desc_modal">
+                <div class="caixa_preco">
+                    <h2 class="subtitulo">Preços</h2>
+                </div>
+                <div class="conteudo_preco">
+                    <div class="espacamento">
+                        <div>
+                            <label class="texto">Valor primeira hora:</label>
+                        </div>
+                        <input type="text" class="input_texto texto valid_preco" id="valor_primeira" placeholder="R$ 00,00">
+                    </div>  
+                    <div class="espacamento">
+                        <div>
+                            <label class="texto">Valor demais horas:</label>
+                        </div>
+                        <input type="text" class="input_texto texto valid_preco" id="valor_demais" placeholder="R$ 00,00">
+                    </div> 
+                </div>
+                <div class="footer_preco footer_modal">
+                    <div>
+                        <button class="botao texto" id="salvar_preco">Salvar</button>
+                    </div>
+                           
+                    <div>
+                        <button class="botao texto" id="fechar_preco">fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner_modal" id="comprovante_modal">
+            <div class="conteiner_comp center desc_modal">
+                <div class="caixa_comp">
+                    <h2 class="subtitulo">Comprovante</h2>
+                </div>
+                <div class="conteudo_comp">
+                    <div class="espacamento">
+                        <label class="texto">Nome:</label>
+                        <input type="text" class="texto" id="comp_nome" disabled>
+                    </div>  
+                    <div class="espacamento">
+                        <label class="texto">Placa:</label>
+                        <input type="text" class="texto" id="comp_placa" disabled>                 
+                    </div> 
+                    <div class="espacamento">                       
+                        <label class="texto">Data:</label>
+                        <input type="text" class="texto" id="comp_data" disabled>
+                    </div>  
+                    <div class="espacamento">
+                        <label class="texto">Hora:</label>
+                        <input type="text" class="texto" id="comp_hora" disabled>                 
+                    </div>
+                </div>
+                <div class="footer_comp footer_modal">
+                    <div>
+                        <button class="botao texto" id="imprimir">imprimir</button>
+                    </div>
+                           
+                    <div>
+                        <button class="botao texto" id="fechar_comp">fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner_modal" id="relatorio_modal">
+            <div class="conteiner_relatorio center desc_modal">
+                <div class="caixa_comp">
+                    <h2 class="subtitulo">Relatório</h2>
+                </div>
+                <div class="conteudo_relatorio">
+                    <div class="conteiner_tabela">
+                        <table class="tabela">
+                           <thead class="campos">
+                              <tr>
+                                 <th class="subtitulo">Nome</th>
+                                 <th class="subtitulo">Entrada <br> Data/Hora</th>
+                                 <th class="subtitulo">Saída <br> Data/Hora</th>
+                                 <th class="subtitulo">Valor</th>
+                              </tr>
+                           </thead>
+                           <tbody class="registros" id="registros_relatorio">
+
+                           </tbody>
+                        </table>
+                     </div>
+                </div>
+                <div class="footer_comp footer_modal"> 
+                    <div>
+                        <button class="botao texto" id="fechar_relatorio">fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--   CONTEUDO DA TABELA  -->
+        <div class="container">
+            <div class="conteudo center">
+                <div class="conteiner_tabela">
+                    <table class="tabela">
+                       <thead class="campos">
+                          <tr>
+                             <th class="subtitulo">Nome</th>
+                             <th class="subtitulo">Placa</th>
+                             <th class="subtitulo">Data</th>
+                             <th class="subtitulo">Hora</th>
+                             <th class="subtitulo">Ações</th>
+                          </tr>
+                       </thead>
+                       <tbody class="registros" id="registros">
+                           
+                       </tbody>
+                    </table>
+                 </div>
+            </div>
+        </div>
+    
+        <script src="js/estacionamento.js"></script>
+        
+    </body>
+</html>
