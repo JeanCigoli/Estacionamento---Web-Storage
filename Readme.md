@@ -1,6 +1,6 @@
 ## **Projeto - Estacionamento**
 
-Este projeto foi voltado para a avaliação somativa da máteria de Algoritmo a pedido do professor Leonid, como forma de aprendizado para a utilização de Web Storage e uma forma de desenvolver nossos conhecimentos em JavaScript.
+> Este projeto foi voltado como forma de aprendizado para a utilização de Web Storage e uma forma de desenvolver nossos conhecimentos em JavaScript.
 
 ##  Pré-requesitos
 
@@ -23,9 +23,11 @@ Todas as funcionalidades foram coletadas junto com o cliente:
     * Valor das demais horas  
 5. Gerar um relatório de rendimentos. 
 
-## Linguagens de programação usadas
+![](gif/estacionamento.gif)
 
-Não foi utilizado nenhum framework para ajudar a construir este sistema.
+## Linguagens de programação utilizadas
+
+Era proibido usar algum tipo de framework, então tudo foi criado do zero, as linguagens que foi solicitada era JavaScript, e foi pedido a utilização do Web Storage para gravar os dados.
 
 * HTML e CSS
 
@@ -37,5 +39,8 @@ Não foi utilizado nenhum framework para ajudar a construir este sistema.
 
 * Web Storage
 
-    E o web storage para armazenar todo os dados.
+    E o web storage para armazenar todo os dados, lembrando que só mantém os dados no seu computador.
 
+#
+
+Criado em: 28/06/2019
